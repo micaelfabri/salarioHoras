@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    background-color: #8ca30b;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 2rem;
+}
+
+.ilustracao {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.icone {
+    width: 40px;
+    height: 40px;
+}
+
+.titulo h1 {
+    font-size: 1.5rem;
+    color: #222;
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.campo input {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+#btn-calcular {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#btn-calcular:hover {
+    background-color: #5a52e0;
+}
+
+output {
+    display: block;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    background-color: #f4f4f4;
+    color: #222;
+    min-height: 1.5rem;
+}
+
+output[hidden] {
+    display: none;
+}

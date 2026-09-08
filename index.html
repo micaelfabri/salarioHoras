@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Calculadora de Salários</title>
 </head>
 <body>
-    
+    <img src="./assets/images/invest.svg" alt="Ilustração de cálculo financeiro" class="ilustracao">
+
+    <div class="container">
+        <div class="titulo">
+            <img src="./assets/images/calculator-100.png" alt="Ícone de calculadora" class="icone">
+            <h1>Calculadora Hora/Salário</h1>
+        </div>
+        <form id="calc-form">
+
+            <div class="campo">
+                <label for="name">Digite seu nome</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+
+            <div class="campo">
+                <label for="salary">Digite seu salário</label>
+                <input type="number" name="salary" id="salary" min="0" step="0.01" required>
+            </div>
+
+            <div class="campo">
+                <label for="time">Horas Trabalhadas</label>
+                <input type="number" name="time" id="time" min="0" step="0.01" required>
+            </div>
+
+            <button id="btn-calcular" type="submit">Calcular</button>
+
+            <output for="salary time" id="result" hidden></output>
+        </form>
+    </div>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
